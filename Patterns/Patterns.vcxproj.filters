@@ -23,5 +23,8 @@
     <ClInclude Include="Singleton.h">
       <Filter>Исходные файлы</Filter>
     </ClInclude>
+    <ClInclude Include="FactoryMethod.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
