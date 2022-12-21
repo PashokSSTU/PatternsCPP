@@ -26,5 +26,8 @@
     <ClInclude Include="FactoryMethod.h">
       <Filter>Исходные файлы</Filter>
     </ClInclude>
+    <ClInclude Include="AbstractFactory.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
