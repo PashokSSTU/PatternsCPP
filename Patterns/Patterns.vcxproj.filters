@@ -29,5 +29,8 @@
     <ClInclude Include="AbstractFactory.h">
       <Filter>Исходные файлы</Filter>
     </ClInclude>
+    <ClInclude Include="Adapter.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
