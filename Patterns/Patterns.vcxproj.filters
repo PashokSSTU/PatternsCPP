@@ -32,5 +32,8 @@
     <ClInclude Include="Adapter.h">
       <Filter>Исходные файлы</Filter>
     </ClInclude>
+    <ClInclude Include="Command.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

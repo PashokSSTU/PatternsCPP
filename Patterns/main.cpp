@@ -1,20 +1,18 @@
 #include <iostream>
-#include "Adapter.h"
+#include "Command.h"
 
 using namespace std;
 
 int main(int argc, char* argv[])
 {
-	Target* target = new Target();
-	ClientCode(target);
-	cout << "What a request looks like from an extension with an unsupported interface: ";
-	Adaptee* adaptee = new Adaptee();
-	cout << adaptee->specificExtensionRequest() << endl;
-	cout << "Request from extension after translating: ";
-	Target* adapter = new Adapter(adaptee);
-	ClientCode(adapter);
+	Invoker* invoker = new Invoker();
+	invoker->SetOnStart(new SimpleCommand("Print ESC"));
+	Receiver* receiver = new Receiver;
+	invoker->SetOnFinish(new ComplexCommand(receiver, "Clear database", "Send bit in processor"));
+	invoker->TransmitCommand();
 
-	delete target;
+	delete receiver;
+	delete invoker;
 
 	return 0;
 }

@@ -10,3 +10,4 @@
 * Adapter (Adapter.h)
 
 ## Behavioral patterns:
+* Command (Command.h)
